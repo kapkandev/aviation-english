@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5f0">
+  <meta name="description" content="Build your aviation English through listening, video, vocabulary, and a knowledge test.">
+  <title>ТАТК ГА | Aviation learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="photo/tatkga.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="preloader" id="preloader" role="status" aria-label="Loading Flight Deck English">
+    <div class="preloader-content">
+      <img src="photo/tatkga.png" alt="TATK GA aviation emblem">
+      <span class="preloader-track" aria-hidden="true"><i></i></span>
+      <span class="preloader-label">PREPARING FOR TAKE-OFF</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Flight Deck English home">
+      <span class="wordmark-mark" aria-hidden="true">FD</span>
+      <span>FLIGHT DECK <span class="wordmark-light">ENGLISH</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#listening">Listening</a>
+      <a href="#video">Video</a>
+      <a href="#vocabulary">Vocabulary</a>
+      <a class="nav-test" href="#test">Take the test <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> ENGLISH FOR AVIATION</p>
+        <h1 id="hero-title">Your next<br>language lift-off.</h1>
+        <p class="hero-description">Explore the world of flight while building the English you need to talk about it. Listen closely, learn the language, and check your knowledge.</p>
+        <a class="button button-dark" href="#listening">Start exploring <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=85" alt="Airplane wing above a layer of clouds">
+        <div class="image-caption"><span class="caption-line"></span> ABOVE THE CLOUDS <span>35,000 FT</span></div>
+        <div class="hero-stamp" aria-hidden="true"><span>LEARN</span><span>TO</span><span>FLY</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-label="About this website">
+      <p class="eyebrow">THE MISSION</p>
+      <p class="intro-text">A practical introduction to <em>aviation English</em>, from the first engine start to the final approach.</p>
+      <p class="creator-credit">Created by <strong>Stanislav Martynovskij, Dmitry Pozharskii</strong></p>
+    </section>
+
+    <section class="learning-section listening-section" id="listening" aria-labelledby="listening-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / TUNE IN</p><h2 id="listening-title">Listening</h2></div>
+        <p class="section-intro">Hear how aviation works. Play the passage, follow along, then try listening once more without the text.</p>
+      </div>
+      <div class="listening-layout">
+        <div class="listening-player">
+          <div class="player-topline"><span class="live-dot"></span> FLIGHT BRIEFING <span class="duration">01:20</span></div>
+          <div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="player-controls">
+            <button class="play-button" id="listen-play" type="button" aria-label="Play listening passage"><span aria-hidden="true">▶</span></button>
+            <button class="text-button" id="listen-stop" type="button">Stop</button>
+            <label class="speed-control" for="speech-rate">Speed <select id="speech-rate" aria-label="Speech speed"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.15">1.15×</option></select></label>
+          </div>
+          <p class="player-note" id="speech-status" aria-live="polite">Listen to the briefing</p>
+        </div>
+        <article class="transcript">
+          <div class="transcript-label">TRANSCRIPT <span>EN</span></div>
+          <h3>Before take-off</h3>
+          <p id="listening-transcript">Before every flight, the pilots and cabin crew complete a series of safety checks. The flight crew review the weather, calculate the amount of fuel required, and inspect the aircraft systems. After boarding, cabin crew make sure all passengers are seated and their seat belts are fastened. When air traffic control gives clearance, the aircraft taxis to the runway. The engines increase their power, the aircraft accelerates, and the nose lifts into the sky. A safe flight begins with careful preparation and clear communication.</p>
+          <p class="listening-tip">KEY IDEA <span>Preparation keeps a flight safe.</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="video-section" id="video" aria-labelledby="video-title">
+      <div class="section-heading section-heading-light">
+        <div><p class="eyebrow">02 / WATCH THE WORLD</p><h2 id="video-title">Video</h2></div>
+        <p class="section-intro">Two aviation stories. The next film appears when the current one ends; scroll back any time.</p>
+      </div>
+      <div class="video-carousel" id="video-carousel" aria-label="Aviation video playlist">
+        <article class="video-slide" id="video-slide-1" aria-label="Video 1 of 2">
+          <div class="video-frame">
+            <video controls playsinline preload="metadata" aria-label="Aviation video 1">
+              <source src="video/aviation1.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <p class="video-caption"><span>01 / AVIATION FILM</span><span>First flight</span></p>
+        </article>
+        <article class="video-slide" id="video-slide-2" aria-label="Video 2 of 2">
+          <div class="video-frame">
+            <video controls playsinline preload="metadata" aria-label="Aviation video 2">
+              <source src="video/aviation2.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div>
+          <p class="video-caption"><span>02 / AVIATION FILM</span><span>Next flight</span></p>
+        </div>
+      </div>
+      <div class="video-navigation" aria-label="Video navigation">
+        <button class="video-nav-button" id="previous-video" type="button" aria-label="Previous video">← Previous</button>
+        <span class="video-position" id="video-position" aria-live="polite">01 / 02</span>
+        <button class="video-nav-button" id="next-video" type="button" aria-label="Next video">Next →</button>
+      </div>
+    </section>
+
+    <section class="learning-section vocabulary-section" id="vocabulary" aria-labelledby="vocabulary-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">03 / BUILD YOUR WORD BANK</p><h2 id="vocabulary-title">Vocabulary</h2></div>
+        <p class="section-intro">Eight essential words to help you describe the aircraft, the crew, and the journey.</p>
+      </div>
+      <div class="vocabulary-grid">
+        <article class="vocab-item"><span class="vocab-number">01</span><h3>Aircraft</h3><p>A vehicle designed for air travel, such as an aeroplane or helicopter.</p><span class="vocab-example">“The aircraft is ready for boarding.”</span></article>
+        <article class="vocab-item"><span class="vocab-number">02</span><h3>Runway</h3><p>A long, level surface where aircraft take off and land.</p><span class="vocab-example">“Flight 204 is approaching the runway.”</span></article>
+        <article class="vocab-item"><span class="vocab-number">03</span><h3>Cabin crew</h3><p>Staff who look after passengers and safety inside an aircraft.</p><span class="vocab-example">“The cabin crew welcomed everyone on board.”</span></article>
+        <article class="vocab-item"><span class="vocab-number">04</span><h3>Altitude</h3><p>The height of an aircraft above sea level or the ground.</p><span class="vocab-example">“We are flying at an altitude of 10,000 metres.”</span></article>
+        <article class="vocab-item"><span class="vocab-number">05</span><h3>Take-off</h3><p>The moment when an aircraft leaves the ground and begins to fly.</p><span class="vocab-example">“Please fasten your seat belt for take-off.”</span></article>
+        <article class="vocab-item"><span class="vocab-number">06</span><h3>Air traffic control</h3><p>A service that manages aircraft movement in the air and on the ground.</p><span class="vocab-example">“The pilot contacted air traffic control.”</span></article>
+        <article class="vocab-item"><span class="vocab-number">07</span><h3>Fuselage</h3><p>The main body of an aircraft, where the crew and passengers sit.</p><span class="vocab-example">“The wings are attached to the fuselage.”</span></article>
+        <article class="vocab-item"><span class="vocab-number">08</span><h3>Turbulence</h3><p>Unsteady air movement that can make an aircraft move suddenly.</p><span class="vocab-example">“The captain announced a short period of turbulence.”</span></article>
+      </div>
+    </section>
+
+    <section class="test-section" id="test" aria-labelledby="test-title">
+      <div class="test-heading">
+        <div><p class="eyebrow">04 / CHECK YOUR KNOWLEDGE</p><h2 id="test-title">Ready for<br>your check?</h2></div>
+        <div class="test-heading-aside"><span class="test-count">30</span><span>QUESTIONS IN BANK<br>10 RANDOM PER TEST</span></div>
+      </div>
+      <form class="student-form" id="student-form">
+        <div class="form-heading"><span>01</span><h3>Passenger details</h3><p>Enter your details before starting.</p></div>
+        <div class="form-fields">
+          <label>First name<input name="firstName" autocomplete="given-name" required maxlength="50" placeholder="name"></label>
+          <label>Last name<input name="lastName" autocomplete="family-name" required maxlength="50" placeholder="surname"></label>
+          <label>Group<input name="group" required maxlength="30" placeholder="group"></label>
+        </div>
+        <button class="button button-orange" type="submit">Start the test <span aria-hidden="true">→</span></button>
+      </form>
+      <form class="quiz-panel" id="quiz-form" hidden>
+        <div class="quiz-topline"><span id="question-counter">QUESTION 01 / 10</span><span id="quiz-progress-label">0% COMPLETE</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Test progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><span id="quiz-progress"></span></div>
+        <fieldset class="question-fieldset">
+          <legend id="question-text"></legend>
+          <div class="answer-options" id="answer-options"></div>
+        </fieldset>
+        <div class="quiz-actions"><button class="text-button" id="previous-question" type="button" disabled>← Previous</button><button class="button button-orange" id="next-question" type="button" disabled>Next question <span aria-hidden="true">→</span></button></div>
+      </form>
+      <section class="results-panel" id="results-panel" aria-live="polite" hidden>
+        <p class="eyebrow">FLIGHT REPORT</p><h3 id="results-title">Test complete</h3>
+        <div class="results-score"><span id="correct-count">0</span><span> / 10 correct</span></div>
+        <p class="results-errors"><span id="error-count">0</span> incorrect answers</p>
+        <p class="results-student" id="results-student"></p>
+        <p class="results-message" id="results-message"></p>
+        <button class="button button-dark" id="retake-test" type="button">Take the test again <span aria-hidden="true">↻</span></button>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#home"><span class="wordmark-mark" aria-hidden="true">FD</span><span>FLIGHT DECK <span class="wordmark-light">ENGLISH</span></span></a>
+    <p>Created by Martynovskij, Pozharskii</p>
+    <a class="back-to-top" href="#home">BACK TO TOP ↑</a>
+  </footer>
+</body>
+</html>
